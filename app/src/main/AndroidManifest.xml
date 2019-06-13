@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.hastaizlem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GirisActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HastaEkleActivity" />
+        <activity android:name=".IzlemActivity" />
+        <activity android:name=".AnasayfaActivity" />
+        <activity android:name=".TaburcuHastaActivity" />
+        <activity android:name=".YasamsalBulguActivity" />
+        <activity android:name=".KanSekeriActivity" />
+        <activity android:name=".AldigiCikardigiActivity" />
+        <activity android:name=".GlaskowActivity" />
+        <activity android:name=".YasamsalBulguEkleActivity" />
+        <activity android:name=".KanSekeriEkleActivity" />
+        <activity android:name=".SolunumBilgileriActivity" />
+        <activity android:name=".SolunumBilgisiEkleActivity" />
+        <activity android:name=".IlacInfuzyonlariActivity" />
+        <activity android:name=".IlavInfuzyonuEkleActivity" />
+        <activity android:name=".AldigiCikardigiEkleActivity" />
+        <activity android:name=".TedaviActivity" />
+        <activity android:name=".DoktorNotlariActivity" />
+        <activity android:name=".GlaskowEkleActivity" />
+        <activity android:name=".GuvenlikActivity" />
+        <activity android:name=".BakimActivity" />
+        <activity android:name=".BakimEkleActivity" />
+        <activity android:name=".KisitlamaIhtiyaciActivity" />
+        <activity android:name=".KisitlamaEkleActivity" />
+        <activity android:name=".IzolasyonActivity" />
+        <activity android:name=".IzolasyonEkleActivity" />
+        <activity android:name=".AlerjiActivity" />
+        <activity android:name=".AlerjiEkleActivity" />
+        <activity android:name=".GirisimlerActivity" />
+        <activity android:name=".GirisimEkleActivity" />
+        <activity android:name=".HemsireNotuActivity" />
+        <activity android:name=".HemsireNotuEkleActivity" />
+        <activity android:name=".CalisanHemsireActivity" />
+        <activity android:name=".CalisanHemsireEkleActivity" />
+        <activity android:name=".BasiYarasiActivity" />
+        <activity android:name=".BasiYarasiEkleActivity"></activity>
+    </application>
+
+</manifest>

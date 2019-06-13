@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlanMavi"
+    tools:context=".IlavInfuzyonuEkleActivity">
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginBottom="92dp"
+        android:text="İLAÇ İNFÜZYONU EKLE"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d6d7d7"
+                android:padding="15dp"
+                android:text="Saat"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtSaat"
+                android:layout_width="513dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="time"
+                android:text=""
+                android:textSize="24sp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d6d7d7"
+                android:padding="15dp"
+                android:text="İlaç Adı"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtIlacAdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d6d7d7"
+                android:padding="15dp"
+                android:text="İlaç Birimi"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtIlacBirimi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text=""
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d6d7d7"
+                android:padding="15dp"
+                android:text="İlaç Dozu"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtIlacDozu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text=""
+                android:textSize="24sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="417dp"
+        android:layout_marginLeft="417dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/text_kullanci"
+        android:text="EKLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="466dp"
+        android:background="@drawable/text_kullanci"
+        android:text="İPTAL"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout8" />
+</android.support.constraint.ConstraintLayout>

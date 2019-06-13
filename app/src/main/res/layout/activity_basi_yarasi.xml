@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlanMavi"
+    tools:context=".BasiYarasiActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BASI YARASI"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <ListView
+        android:id="@+id/lvBasiYarasi"
+        android:layout_width="800dp"
+        android:layout_height="665dp"
+        android:background="@android:color/background_light"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="800dp"
+        android:layout_height="80dp"
+        android:background="@drawable/text_kullanci"
+        android:text="EKLE"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="1002dp" />
+
+    <Button
+        android:id="@+id/btnSil"
+        android:layout_width="800dp"
+        android:layout_height="80dp"
+        android:background="@drawable/text_kullanci"
+        android:text="SİL"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="1099dp" />
+</android.support.constraint.ConstraintLayout>

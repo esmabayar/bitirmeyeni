@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlanMavi"
+    tools:context=".SolunumBilgileriActivity">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOLUNUM BİLGİLERİ "
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <ListView
+        android:id="@+id/lvSolunum"
+        android:layout_width="861dp"
+        android:layout_height="712dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424"
+        tools:layout_editor_absoluteX="4dp" />
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_kullanci"
+        android:text="EKLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="994dp" />
+
+    <Button
+        android:id="@+id/btnSil"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_kullanci"
+        android:text="SİL"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1059dp" />
+
+    <Button
+        android:id="@+id/btnOnceki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_kullanci"
+        android:text="ÖNCEKİ DEĞERLER"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="1118dp" />
+
+
+</android.support.constraint.ConstraintLayout>

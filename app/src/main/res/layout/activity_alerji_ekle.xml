@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlanMavi"
+    tools:context=".AlerjiEkleActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="52dp"
+        android:text="ALERJİ DURUMU EKLE"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout14"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout14"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="74dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView57">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d6d7d7"
+                android:padding="15dp"
+                android:text="Tarih"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtTarih"
+                android:layout_width="536dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="time"
+                android:text=""
+                android:textSize="24sp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d6d7d7"
+                android:padding="15dp"
+                android:text="Alerji Durumu"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtAlerjiDurumu"
+                android:layout_width="536dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="time"
+                android:paddingLeft="10dp"
+                android:text="Var, Yok"
+                android:textSize="24sp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d6d7d7"
+                android:padding="15dp"
+                android:text="Alerji Nedeni"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtAlerjiNedeni"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:text="Gıda, İlaç"
+                android:textSize="24sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="407dp"
+        android:layout_marginLeft="407dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:background="@drawable/text_kullanci"
+        android:text="EKLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="578dp"
+        android:background="@drawable/text_kullanci"
+        android:text="İPTAL"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout14" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E90FF"
+    tools:context=".YasamsalBulguActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="YAŞAMSAL BULGULAR"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="784dp"
+        android:layout_height="41dp"
+        android:background="@drawable/text_kullanci"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="139dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:text="Bir Gün Önceki En Yüksek Ateş"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtEnYüksekAtes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="30sp" />
+
+    </TableRow>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="798dp"
+        android:layout_height="198dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="993dp">
+
+        <Button
+            android:id="@+id/btnEkle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EKLE"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="SİL"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="ÖNCEKİ DEĞERLER"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvYasamsalBulgu"
+        android:layout_width="784dp"
+        android:layout_height="726dp"
+        android:background="@drawable/text_kullanci"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="204dp" />
+</android.support.constraint.ConstraintLayout>

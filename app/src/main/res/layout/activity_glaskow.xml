@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GlaskowActivity"
+    android:background="@color/arkaPlanMavi"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView87"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Glaskow Koma-Ağrı-Pupil Skalası"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Glaskow Koma Skalası"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <TextView
+        android:id="@+id/textView98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ağrı"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <ListView
+        android:layout_width="818dp"
+        android:layout_height="205dp"
+        android:background="@android:color/background_light"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <ListView
+        android:layout_width="800dp"
+        android:layout_height="223dp"
+        android:background="@android:color/background_light"
+        tools:layout_editor_absoluteY="439dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pupil"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="700dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@android:color/background_light"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="747dp" />
+
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_kullanci"
+        android:text="EKLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="1020dp" />
+
+    <Button
+        android:id="@+id/btnSil"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_kullanci"
+        android:text="SİL"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1082dp" />
+
+    <Button
+        android:id="@+id/btnOnceki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_kullanci"
+        android:text="ÖNCEKİ DEĞERLER"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

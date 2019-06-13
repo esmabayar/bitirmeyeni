@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlanMavi"
+    tools:context=".AldigiCikardigiActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="ALDIĞI ÇIKARDIĞI SIVI TAKİBİ"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="119dp"
+        android:layout_marginBottom="36dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="784dp"
+            android:layout_height="51dp"
+            android:background="@android:color/background_light"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="163dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Bir Gün Önceki Aldığı Sıvı Miktarı"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/txtAldigiDeger"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="784dp"
+            android:layout_height="51dp"
+            android:background="@android:color/background_light"
+            android:paddingRight="5dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="163dp">
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Bir Gün Önceki Çıkardığı Sıvı Miktarı"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/txtCikardigiDeger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="784dp"
+            android:layout_height="51dp"
+            android:background="@android:color/background_light"
+            android:paddingRight="5dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="163dp">
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingRight="10dp"
+                android:text="Denge"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/txtDenge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="TextView"
+                android:textSize="30sp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="282dp"
+        android:text="Aldığı Sıvılar"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout10" />
+
+    <ListView
+        android:id="@+id/lvAldigi"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:layout_marginTop="88dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout10">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Çıkradığı Sıvılar"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lvAldigi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <ListView
+        android:id="@+id/lvCikardigi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="56dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/btnEkle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView40">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnEkle"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/text_kullanci"
+        android:text="EKLE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnSil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lvCikardigi" />
+
+    <Button
+        android:id="@+id/btnSil"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="77dp"
+        android:background="@drawable/text_kullanci"
+        android:text="SİL"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEkle" />
+
+    <Button
+        android:id="@+id/btnOnceki"
+        android:layout_width="794dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/text_kullanci"
+        android:text="ÖNCEKİ DEĞERLER"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
